@@ -24,5 +24,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void btnExplore_Click(object sender, RoutedEventArgs e)
+        {
+            genrePanel.Visibility = Visibility.Visible;
+            btnExplore.Visibility = Visibility.Collapsed;
+
+        }
     }
 }

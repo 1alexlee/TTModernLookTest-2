@@ -41,9 +41,106 @@
                 
             </TextBlock>
 
-            <ContentControl Grid.Row="2"
-                            Margin="10"
-                            ></ContentControl>
+            <Button x:Name="btnExplore" Click="btnExplore_Click"
+                    Style="{DynamicResource ExploreButton}"
+                    Grid.Row="2"
+                    Margin="0,0,0,230"
+                    HorizontalAlignment="Center"
+                    Content="Explore"
+                    FontFamily="Georgia" FontSize="16" Foreground="WhiteSmoke"
+                    FontStyle="Italic"
+                    FontWeight="UltraBold">
+                
+            </Button>
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          Margin="0,0,0,0"
+                          Grid.Row="2"
+                          Height="399"
+                          HorizontalAlignment="Center"
+                          >
+                <StackPanel x:Name="genrePanel" Grid.Row="2" Visibility="Collapsed"
+                        Height="900">
+                    <Button x:Name="btnRock"
+                            Content="Rock" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+
+                    <Button x:Name ="btnRap" Content="Rap" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name ="btnCountry" 
+                            Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name="btnRnB"
+                            Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name="btnEDM"
+                            Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name="btnPop"
+                            Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name="btnJazz"
+                            Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button x:Name="btnBlues"
+                            Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+
+
+
+
+
+
+                </StackPanel>
+            </ScrollViewer>
             
 
             
