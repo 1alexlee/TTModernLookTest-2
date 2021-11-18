@@ -5,10 +5,14 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/GenreButtonStyle.xaml">
-                </ResourceDictionary>
+                <ResourceDictionary  Source="Theme/GenreButtonStyle.xaml"/>
+                <ResourceDictionary Source="Theme/ExploreButton.xaml"/>
+
             </ResourceDictionary.MergedDictionaries>
+            
+            
         </ResourceDictionary>
          
     </Application.Resources>

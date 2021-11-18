@@ -10,122 +10,50 @@
         ResizeMode ="NoResize"
         Background ="Transparent"
         AllowsTransparency ="True">
-    
-    <Border Background ="#272537"
-           CornerRadius ="15">
 
+    <Border CornerRadius="15"
+            Background="#272537">
         <Grid>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="150"/>
-
-                <RowDefinition Height="50" />
                 <RowDefinition Height="200"/>
-                
+                <RowDefinition Height="80"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock 
-                Text="TuneTeller"
-                Grid.Row="0"
-                FontFamily="Georgia"
-                Foreground="NavajoWhite"
-                FontSize="48"
-                Margin="50,0,50,50"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
-            </TextBlock>
 
+            <TextBlock Grid.Row="0"
+                       Text="TuneTeller"
+                       FontSize="82"
+                       Foreground="WhiteSmoke"
+                       FontFamily="Georgia"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="0,-60,0,0">
+                
+            </TextBlock>
             <TextBlock Grid.Row="1"
                        Text="Finding music made easy."
-                       FontSize="14"
+                       FontSize="20"
+                       Foreground="WhiteSmoke"
                        FontFamily="Georgia"
-                       Foreground="NavajoWhite"
                        HorizontalAlignment="Center"
-                       Margin="-10,0,5,0"/>
+                       VerticalAlignment="Top"
+                       Margin="0,50,0,0">
+                
+            </TextBlock>
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto"
-                          Margin="0,0,0,-198"
-                          Grid.Row="2"
-                          Height="399">
-                <StackPanel Grid.Row="2"
-                        Height="900">
-                    <Button Content="Rock" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
+            <ContentControl Grid.Row="2"
+                            Margin="10"
+                            ></ContentControl>
+            
 
-                    <Button Content="Rap" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="NavajoWhite"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-
-
-
-
-
-
-                </StackPanel>
-            </ScrollViewer>
+            
+            
+            
+            
         </Grid>
-
-        
-        
     </Border>
+    
+
 
 
 
