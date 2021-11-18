@@ -6,8 +6,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/GenreButtonStyle.xaml">
-                </ResourceDictionary>
+                
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
          
