@@ -25,11 +25,56 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        
+        
+        
         private void btnExplore_Click(object sender, RoutedEventArgs e)
         {
             genrePanel.Visibility = Visibility.Visible;
             btnExplore.Visibility = Visibility.Collapsed;
 
         }
+
+        private void btnRock_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRap_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCountry_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRnB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEDM_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnJazz_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBlues_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        
     }
 }
