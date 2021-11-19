@@ -15,10 +15,6 @@
 
         <Grid>
 
-            <Border Height="170" Width="370"
-                    Background="#192841">
-                
-            </Border>
             <TextBlock Text="TuneTeller" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
                        Height="50" Width="250"
                        HorizontalAlignment="Center"
