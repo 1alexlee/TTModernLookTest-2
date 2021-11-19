@@ -20,6 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -30,8 +31,12 @@ namespace WpfApp1
         
         private void btnExplore_Click(object sender, RoutedEventArgs e)
         {
-            genrePanel.Visibility = Visibility.Visible;
-            btnExplore.Visibility = Visibility.Collapsed;
+            SelectionWindow GenreSelection = new SelectionWindow();
+            GenreSelection.Show();
+            
+            
+            
+
 
         }
 
@@ -75,6 +80,9 @@ namespace WpfApp1
 
         }
 
-        
+        private void btnExplore_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

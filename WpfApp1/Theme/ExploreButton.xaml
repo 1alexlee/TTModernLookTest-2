@@ -9,7 +9,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <ContentControl>
-                            <Border x:Name="btnBorder" Height="69" Width="300"
+                            <Border x:Name="btnBorder"
                                 BorderThickness="1.75"
                                 CornerRadius="10"
                                 BorderBrush="Black"

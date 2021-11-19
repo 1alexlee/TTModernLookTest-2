@@ -5,152 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Height ="600" Width ="400"
+        Height ="200" Width ="400"
         WindowStyle ="None"
         ResizeMode ="NoResize"
         Background ="Transparent"
         AllowsTransparency ="True">
+    <Border Background="#152238"
+            CornerRadius="10">
 
-    <Border CornerRadius="15"
-            Background="#272537">
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0"
-                       Text="TuneTeller"
-                       FontSize="82"
-                       Foreground="WhiteSmoke"
-                       FontFamily="Georgia"
+            <Border Height="170" Width="370"
+                    Background="#192841">
+                
+            </Border>
+            <TextBlock Text="TuneTeller" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
+                       Height="50" Width="250"
                        HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Margin="0,-60,0,0">
+                       Foreground="WhiteSmoke"
+                       
+                       Margin="-10,10,0,100"
+                       >
                 
             </TextBlock>
-            <TextBlock Grid.Row="1"
-                       Text="Finding music made easy."
-                       FontSize="20"
-                       Foreground="WhiteSmoke"
-                       FontFamily="Georgia"
+
+            <TextBlock Text="Finding music made easy." FontSize="16" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
                        HorizontalAlignment="Center"
-                       VerticalAlignment="Top"
-                       Margin="0,50,0,0">
+                       VerticalAlignment="Center"
+                       Foreground="BlanchedAlmond">
                 
             </TextBlock>
 
             <Button x:Name="btnExplore" Click="btnExplore_Click"
-                    Style="{DynamicResource ExploreButton}"
-                    Grid.Row="2"
-                    Margin="0,0,0,230"
-                    HorizontalAlignment="Center"
                     Content="Explore"
-                    FontFamily="Georgia" FontSize="16" Foreground="WhiteSmoke"
-                    FontStyle="Italic"
-                    FontWeight="UltraBold">
+                    Foreground="WhiteSmoke"
+                    FontFamily="Georgia" FontSize="16"
+                    Height="25" Width="100"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="-10,0,0,40"
+                    Style="{DynamicResource ExploreButton}"
+                    >
                 
             </Button>
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto"
-                          Margin="0,0,0,0"
-                          Grid.Row="2"
-                          Height="399"
-                          HorizontalAlignment="Center"
-                          >
-                <StackPanel x:Name="genrePanel" Grid.Row="2" Visibility="Collapsed"
-                            Width="400" Height="900">
-                    
-                    <Button x:Name="btnRock" Click="btnRock_Click"
-                            Content="Rock" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-
-                    <Button x:Name ="btnRap" Content="Rap" Click="btnRap_Click"
-                            HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name ="btnCountry" Click="btnCountry_Click"
-                            Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name="btnRnB" Click="btnRnB_Click"
-                            Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name="btnEDM" Click="btnEDM_Click"
-                            Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name="btnPop" Click="btnPop_Click"
-                            Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name="btnJazz" Click="btnJazz_Click"
-                            Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-                    <Button x:Name="btnBlues" Click="btnBlues_Click"
-                            Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="200"
-                            FontSize="14"
-                            FontFamily="Georgia"
-                            Foreground="WhiteSmoke"
-                            Background="Transparent"
-                            Style="{StaticResource GenreButtonStyle}">
-                    </Button>
-
-
-
-
-
-
-                </StackPanel>
-            </ScrollViewer>
-            
-
-            
-            
-            
             
         </Grid>
+
+
     </Border>
+
+    
     
 
 
