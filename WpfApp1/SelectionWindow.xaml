@@ -8,10 +8,16 @@
         Title="SelectionWindow" Height="500" Width="800"
         WindowStyle="None"
         ResizeMode="NoResize"
-        Background="Transparent"
         AllowsTransparency="True">
-    <Border Background="#152238"
-            CornerRadius="10">
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="Blue" Offset=".1" />
+            <GradientStop Color="BlueViolet" Offset=".4" />
+            <GradientStop Color="HotPink" Offset=".9" />
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <Border>
 
 
 
