@@ -24,10 +24,106 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="400"/>
-
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition/>
+                
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Grid.Row="0"
+                       Text="Get Exploring"
+                       FontSize="32"
+                       FontFamily="Georgia"
+                       Foreground="White"
+                       Margin="15,10,0,5">
+                
+            </TextBlock>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          Margin="0,0,0,0"
+                          Grid.Row="2"
+                          Height="400">
+                <StackPanel Grid.Row="2"
+                        Height="900">
+                    <Button x:Name="btnRock" Content=" Rock" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnRock_Click"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+
+                    <Button Content="Rap" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    <Button Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Height="100" Width="300"
+                            FontSize="14"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+
+
+
+
+
+
+                </StackPanel>
+            </ScrollViewer>
+
+            
+            
         </Grid>
     </Border>
 </Window>

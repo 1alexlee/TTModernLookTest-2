@@ -21,13 +21,10 @@
 
         <Grid>
 
+
             <TextBlock Text="TuneTe♩♩er" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
                        Height="50" Width="274"
-                       HorizontalAlignment="Center"
-                       Foreground="WhiteSmoke"
-                       
-                       Margin="70,30,56,120"
-                       >
+
 
             </TextBlock>
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Google.Cloud.Firestore;
 
 namespace WpfApp1
 {
@@ -35,54 +36,8 @@ namespace WpfApp1
             GenreSelection.Show();
             
             
-            
-
-
         }
 
-        private void btnRock_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnRap_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnCountry_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnRnB_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnEDM_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnPop_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnJazz_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBlues_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnExplore_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }
