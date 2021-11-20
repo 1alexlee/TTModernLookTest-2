@@ -8,52 +8,54 @@
         Height ="200" Width ="400"
         WindowStyle ="None"
         ResizeMode ="NoResize"
-        Background ="Transparent"
         AllowsTransparency ="True">
-    <Border Background="#152238"
-            CornerRadius="10">
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="Blue" Offset=".1" />
+            <GradientStop Color="BlueViolet" Offset=".4" />
+            <GradientStop Color="HotPink" Offset=".9" />
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Border>
 
         <Grid>
 
-            
-            <TextBlock Text="TuneTeller" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
-                       Height="50" Width="250"
-                       HorizontalAlignment="Center"
-                       Foreground="WhiteSmoke"
-                       
-                       Margin="-10,10,0,100"
-                       >
-                
+
+            <TextBlock Text="TuneTe♩♩er" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
+                       Height="50" Width="274"
+
+
             </TextBlock>
 
             <TextBlock Text="Finding music made easy." FontSize="16" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Foreground="BlanchedAlmond">
-                
+
             </TextBlock>
 
             <Button x:Name="btnExplore" Click="btnExplore_Click"
-                    Content="Explore"
+                    Content="Get Exploring"
                     Foreground="WhiteSmoke"
-                    FontFamily="Georgia" FontSize="16"
+                    FontFamily="Georgia" FontSize="11"
                     Height="25" Width="100"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                     Margin="-10,0,0,40"
                     Style="{DynamicResource ExploreButton}"
                     >
-                
+
             </Button>
 
-            
+
         </Grid>
 
 
     </Border>
 
-    
-    
+
+
 
 
 
