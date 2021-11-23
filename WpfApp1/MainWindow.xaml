@@ -23,7 +23,7 @@
 
 
             <TextBlock Text="TuneTe♩♩er" FontSize="50" FontFamily="Georgia" FontStyle="Oblique" FontWeight="Thin"
-                       Height="50" Width="274"
+                       Height="50" Width="274">
 
 
             </TextBlock>

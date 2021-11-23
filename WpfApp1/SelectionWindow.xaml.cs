@@ -54,7 +54,7 @@ namespace WpfApp1
         {
             try
             {
-                Google.Cloud.Firestore.DocumentReference docref = db.Collection("rock").Document("song");
+                Google.Cloud.Firestore.DocumentReference docref = db.Collection("rock").Document("songs");
                 DocumentSnapshot snap = await docref.GetSnapshotAsync();
 
                 if (snap.Exists)
