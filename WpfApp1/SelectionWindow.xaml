@@ -49,71 +49,88 @@
                 <StackPanel Grid.Row="2"
                         Height="900"
                             Margin="0,0,0,20">
-                    <Button x:Name="btnRock" Content=" Rock" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnRock_Click"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="Rock" Content=" Rock" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Rock_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
 
-                    <Button Content="Rap" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="Rap" Content="Rap" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Rap_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button Name="Country" Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Country_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="RnB"  Content="Rhythm and Blues" HorizontalAlignment="Center" VerticalAlignment="Center" Click="RnB_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="EDM" Content="EDM" HorizontalAlignment="Center" VerticalAlignment="Center" Click="EDM_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="Pop" Content="Pop" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Pop_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                        <Button x:Name="Jazz" Content="Jazz" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Jazz_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                        </Button>
+                        <Button x:Name="Blues" Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Blues_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
-                    <Button Content="Blues" HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Height="100" Width="300"
-                            FontSize="14"
+                    <Button x:Name="Indie" Content="Indie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Indie_Click"
+                            Height="80" Width="180"
+                            FontSize="20"
                             FontFamily="Georgia"
                             Foreground="NavajoWhite"
                             Background="Transparent"
                             Style="{StaticResource GenreButtonStyle}">
                     </Button>
+                    <Button x:Name="Quit" Content="Quit" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Quit_Click"
+                            Height="60" Width="100"
+                            FontSize="20"
+                            FontFamily="Georgia"
+                            Foreground="NavajoWhite"
+                            Background="Transparent"
+                            Style="{StaticResource GenreButtonStyle}">
+                    </Button>
+                    
 
 
 
@@ -124,7 +141,43 @@
             </ScrollViewer>
 
             
-            
+
+            <Border Grid.Row="1" Grid.Column="1"
+                    Height="380" Width="480" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    BorderThickness="5">
+                <Border.BorderBrush>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Blue" Offset=".6"/>
+                        <GradientStop Color="HotPink" Offset=".1"/>
+                        <GradientStop Color="BlueViolet" Offset=".4"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+
+                <Border.Background>
+                    
+                    <LinearGradientBrush>
+                        <GradientStop Color="Blue" Offset=".1"/>
+                        <GradientStop Color="HotPink" Offset=".4"/>
+                        <GradientStop Color="BlueViolet" Offset=".6"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+            </Border>
+            <StackPanel Grid.Row="1" Grid.Column="1" Height="380" Width="480"
+                        Background="Transparent">
+
+
+                <TextBlock Text="Songs for you" Foreground="FloralWhite" FontSize="24" FontFamily="Georgia" Margin="10,10,0,0">
+                </TextBlock>
+
+                <TextBox x:Name="outputBox" Foreground="FloralWhite" Background="Transparent" Height="340" Margin="10,10,10,10" BorderThickness="0">
+                    
+                    
+                </TextBox>
+            </StackPanel>
+
+
+
         </Grid>
     </Border>
 </Window>

@@ -35,7 +35,7 @@
 
             </TextBlock>
 
-            <Button x:Name="btnExplore" Click="btnExplore_Click"
+            <Button x:Name="btnExplore" Click="BtnExplore_Click"
                     Content="Get Exploring"
                     Foreground="WhiteSmoke"
                     FontFamily="Georgia" FontSize="11"
