@@ -40,16 +40,8 @@ namespace WpfApp1
             
             
         }
-        //possible check method to see if all the songs have been recommended -- can then tell them to select another genre
-        /*string exhausted_table(string[] songList)
-        {
-            string all_strings = "";
-            for (int i = 0; i < songList.Length - 1; i++){
-                all_strings += songList[i] + "/nm";
-            }
-            return all_strings;
-        }*/
-
+        
+        
         private void Rock_Click(object sender, RoutedEventArgs e) 
         {
             
@@ -64,6 +56,9 @@ namespace WpfApp1
             GetData_From_Document(rock_table);
            
         }
+
+
+       
         
         
 
@@ -84,12 +79,14 @@ namespace WpfApp1
 
                 if (snap.Exists)
                 {
-                    //convert document field songArray into string array
-                    //set new random object, get next rand int in bounds.
-                    //unfinished
-                    string[] songList = snap.GetValue<string[]>("songArray");
-                    Random initial_selector = new Random();
+                   
 
+                    string[] songList = snap.GetValue<string[]>("songArray");
+                    Random songSelector = new Random();
+                    string nextRec = songList.ElementAt(songSelector.Next(0, songList.Length));
+                    outputBox.Text += nextRec + "\n";
+                    
+                    
                     
                     
                     
