@@ -33,7 +33,8 @@ namespace WpfApp1
         private void BtnExplore_Click(object sender, RoutedEventArgs e)
         {
             SelectionWindow GenreSelection = new SelectionWindow();
-            GenreSelection.Show();
+            GenreSelection.ShowDialog();
+            
             
             
         }

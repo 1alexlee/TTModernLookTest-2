@@ -45,7 +45,8 @@
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           Margin="50,0,0,-50"
                           Grid.Row="2"
-                          Height="400">
+                          Height="400"
+                          >
                 <StackPanel Grid.Row="2"
                         Height="900"
                             Margin="0,0,0,20">
